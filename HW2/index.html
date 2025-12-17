@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Домашно 2</title>
+</head>
+<body>
+    <main class="pet-registration">
+        <section class="pet-image">
+            <img src="images/dog.png" alt="Image of a dog">
+        </section>
+
+        <section class="pet-form">
+            <h1> Yay, puppies! Register your puppy today! </h1>
+
+            <form class="pet-info">
+                <label for="pet-name"> Name </label>
+                <input type="text" id="pet-name" placeholder="Pet's name"/>
+
+                <label for="pet-photo"> Upload Photo </label>
+                <input type="file" id="pet-photo"/>
+                
+                <label for="pet-breed"> Breed </label>
+                <select id="pet-breed">
+                    <option value="" disabled selected> Choose a breed </option>
+                    <option value="1"> Breed 1 </option>
+                    <option value="2"> Breed 2 </option>
+                    <option value="3"> Breed 3 </option>
+                    <option value="4"> Breed 4 </option>
+                    <option value="5"> Breed 5 </option>
+                </select>
+
+                <label for="pet-birthday"> Birthday </label>
+                <input type="date" id="pet-birthday">
+
+                <fieldset class="pet-gender">
+                    <legend> Gender </legend>
+                    <input id="pet-gender-f" type="radio" name="gender" value="F">
+                    <label for="pet-gender-f"> Female </label>
+                    <input id="pet-gender-m" type="radio" name="gender" value="M">
+                    <label for="pet-gender-m"> Male </label>
+                </fieldset>
+
+                <label for="pet-weight"> Weight (lbs) </label>  
+                <input type="number" min="0" id="pet-weight" placeholder="Enter weight">
+                                
+                <div class="navigation">
+                    <button class="nav-back" type="button"> Back </button>
+                    <button class="nav-next" type="button"> Next </button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
