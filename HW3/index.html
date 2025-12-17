@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/script.js" type="text/javascript" defer></script>
+    <title> Регистрация </title>
+</head>
+<body>
+    
+    <form id="register-form">
+        <p class="hint">Полетата със * са задължителни.</p>
+
+        <div class="form-row">
+            <label for="username">
+                Потребителко име
+                <span class="required" aria-hidden="true">*</span>
+            </label>
+
+            <input
+                type="text"
+                id="username"
+                required
+                aria-required="aria-required"
+                placeholder="Въведете потребителско име."
+            />
+            
+            <p class="error" role="alert" aria-live="assertive" id="error-username"></p>
+        </div>
+
+        <div class="form-row">
+            <label for="name">
+                Име
+                <span class="required" aria-hidden="true">*</span>
+            </label>
+            <input
+                type="text"
+                id="name"
+                required
+                aria-required="aria-required"
+                placeholder="Въведете първо име."
+            />
+            <p class="error" role="alert" aria-live="assertive" id="error-name"></p>
+        </div>
+
+        <div class="form-row">
+            <label for="family-name">
+                Фамилия
+                <span class="required" aria-hidden="true">*</span>
+            </label>
+            <input
+                type="text"
+                id="family-name"
+                required
+                aria-required="aria-required"
+                placeholder="Въведете фамилия."
+            />
+            <p class="error" role="alert" aria-live="assertive" id="error-family-name"></p>
+        </div>
+
+        <div class="form-row">
+            <label for="email">
+                Имейл
+                <span class="required" aria-hidden="true">*</span>
+            </label>
+            <input
+                type="text"
+                id="email"
+                required
+                aria-required="aria-required"
+                placeholder="Въведете имейл."
+            >
+            <p class="error" role="alert" aria-live="assertive" id="error-email"></p>
+        </div>
+
+        <search class="form-row">
+            <label for="password">
+                Парола
+                <span class="required" aria-hidden="true">*</span>
+            </label>
+            <input
+                type="password"
+                id="password"
+                required
+                aria-required="aria-required"
+                placeholder="Въведете парола."
+            />
+            <p class="error" role="alert" aria-live="assertive" id="error-password"></p>
+        </search>
+        
+
+        <fieldset>
+            <legend> Адрес </legend>
+
+            <div class="form-row">
+                <label for="street"> Улица </label>
+                <input type="text" id="street"/>
+            </div>
+
+            <div class="form-row">
+                <label for="city"> Град </label>
+                <input type="text" id="city"/>
+            </div>
+
+            <div class="form-row">
+                <label for="postal-code"> Пощенски код </label>
+                <input type="text" id="postal-code"/>
+                <p class="error" role="alert" aria-live="assertive" id="error-postal-code"></p>
+            </div>
+        </fieldset>
+
+        <button type="button" id="register-btn"> Регистрация </button>
+    </form>
+
+    <p id="success"></p>
+</body>
+</html>
